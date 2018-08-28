@@ -2,17 +2,11 @@
 
 
 
-# Radiation Detection Example
+# Hinep Securin
 
-This is an example Python app for the Dronesmith API from Dronesmith Technologies. The Dronesmith API is an HTTP requests based API that enables software first drone development. With the Dronesmith API you can test code on virtual drones that are built into the API and then deploy the same code on a real drone. This app uses a virtual drone to accomplish a task in a made up scenario.
+Hinep Securin is a drone & UAV traffic-management system. It has built-in AI capabilities to generate real-time map of the aerial traffic.
 
-<div>
-      <img src="app_screenshot.png" alt="" width="100%">
-</div>
-
-
-## The Scenario
-A deranged physics professor at Zurich University has been performing experiments in various buildings on the North side of the campus. Last night one of his experiments with radioactive materials went terribly wrong and the campus has become radioactive. Now it is up to you and your team to find the location of the failed experiment using a drone equipped with a radiation sensor.
+Built for MoveHack 2018 by NITI Ayog.
 
 ## The App
 
@@ -20,11 +14,7 @@ The app commands a virtual drone to fly in a path around the Zurich University c
 
 The app in its current form will not find the radiation source. It is up to you modify the app to suit your strategy for finding the building with the radiation source.
 
-<div>
 
-    <img src="app_diagram.png" alt="" width="100%">
-
-</div>
 
 <br/>
 
@@ -78,36 +68,6 @@ This should be included by default in latest Python version.
 
 If you're on windows, you may need to run python -m pip instead of just pip.
 
-
-## Running the App
-1. **Download or clone the Github project.**
-
-  https://github.com/dronesmith/Radiation-Detection-Example
-
-2. **Add your email and Dronesmith API key to user.json.**
-
-  Leave drone_name field blank.
-
-3. **Add your Google Developers API key to index.html.**
-
-  Find the script with the map.googleapis.com source in the HTML body and add your key to the key field in the URL.
-  ```
-  <script src="https://maps.googleapis.com/maps/api/js?key=ADD-KEY-HERE&v=3.exp&libraries=visualization&callback=onGoogleReady" async defer></script>
-  ```
-4. **Run drone_setup.py script.**
-
-  This will create a new virtual drone on your account and add a radiation sensor to it.
-
-5. **Run `python radiation_sensor.py` and leave it running.**
-
-6. **In another terminal run `python server.py`.**
-
-7. **Go to http://localhost:8080**
-
-You should immediately see a Google Maps view. The drone marker will show in about 10 seconds after the page loads. The marker will not move until after the drone has taken off and reached the desired altitude. You should then see the drone take a lap around the campus.
-
-
-
 ## Helpful Links
 * [Dronesmith API Reference](http://readme.dronesmith.io/reference)
 * [Using Postman with the Dronesmith API](http://readme.dronesmith.io/docs/tutorial-dronesmith-api)
@@ -117,8 +77,4 @@ You should immediately see a Google Maps view. The drone marker will show in abo
 
 <br/>
 
-<div>
-  <a href="http://community.dronesmith.io" target="_blank">
-    <img src="https://dl.dropboxusercontent.com/u/348929/slack.jpg" alt="" width="100%">
-  </a>
-</div>
+
